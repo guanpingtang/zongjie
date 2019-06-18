@@ -1,4 +1,4 @@
-package com.tgp.cloud.eureka.rest;
+package com.tgp.cloud.server.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
