@@ -14,6 +14,8 @@
         <module>api</module>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>eureka-ribbon-client</module>
+        <module>eureka-feign-client</module>
     </modules>
 
 
@@ -27,6 +29,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <lombok.version>1.16.20</lombok.version>
     </properties>
 
     <dependencies>
@@ -54,6 +57,12 @@
             <!--<groupId>org.springframework.cloud</groupId>-->
             <!--<artifactId>spring-cloud-starter-netflix-zuul</artifactId>-->
         <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
