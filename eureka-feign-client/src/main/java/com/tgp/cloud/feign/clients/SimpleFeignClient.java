@@ -13,7 +13,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 /**
  * @author tgp
  */
-@FeignClient(value = "eureka-client", configuration = FeignConfig.class)
+@FeignClient(value = "eureka-client", fallback = SimpleFeignClientFallback.class, configuration = FeignConfig.class)
 public interface SimpleFeignClient {
 
     /**

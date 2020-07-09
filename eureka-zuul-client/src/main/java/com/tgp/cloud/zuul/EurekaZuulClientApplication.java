@@ -1,20 +1,20 @@
-package com.tgp.cloud.ribbon;
+package com.tgp.cloud.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @author tgp
  */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableHystrix
-public class EurekaRibbonClientApplication {
+@EnableZuulProxy
+public class EurekaZuulClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaRibbonClientApplication.class, args);
+        SpringApplication.run(EurekaZuulClientApplication.class, args);
     }
 
 }
